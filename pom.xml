@@ -13,18 +13,15 @@
         <phpmavenRootUrl>http://www.php-maven.org</phpmavenRootUrl>
         <phpmavenFsRoot>${project.basedir}</phpmavenFsRoot>
 
-<!--        <phpmavenNexusRootUrl>http://nexus.php-maven.org</phpmavenNexusRootUrl> -->
         <phpmavenNexusRootUrl>http://localhost:8090</phpmavenNexusRootUrl>
         <phpmavenReposReleasesUrl>${phpmavenNexusRootUrl}/index.html#view-repositories;release-repo1.php-maven.org</phpmavenReposReleasesUrl>
         <phpmavenReposReleasesUrlAlt>${phpmavenNexusRootUrl}/content/groups/release-repo1.php-maven.org/</phpmavenReposReleasesUrlAlt>
         <phpmavenReposReleasesId>releases-php-maven-org</phpmavenReposReleasesId>
         <phpmavenReposReleasesName>Official PHP-Maven Releases</phpmavenReposReleasesName>
         <phpmavenReposReleasesUploadNullUrl>${phpmavenNexusRootUrl}/content/repositories/null-releases.php-maven.org/</phpmavenReposReleasesUploadNullUrl>
-<!--        <phpmavenReposReleasesUploadPearUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-pear-releases/</phpmavenReposReleasesUploadPearUrl> -->
 
         <phpmavenReposReleasesUploadPearUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-pear-releases/</phpmavenReposReleasesUploadPearUrl>
 
-<!--        <phpmavenReposReleasesUploadPluginUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-plugin-releases/</phpmavenReposReleasesUploadPluginUrl> -->
 
         <phpmavenReposReleasesUploadPluginUrl>${phpmavenNexusRootUrl}/repository/internal/</phpmavenReposReleasesUploadPluginUrl>
 
@@ -36,8 +33,6 @@
         <phpmavenReposSnapshotsName>Official PHP-Maven Snapshots</phpmavenReposSnapshotsName>
         <phpmavenReposSnapshotsUploadNullUrl>${phpmavenNexusRootUrl}/content/repositories/null-snapshots.php-maven.org/</phpmavenReposSnapshotsUploadNullUrl>
         <phpmavenReposSnapshotsUploadPearUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-pear-snapshots/</phpmavenReposSnapshotsUploadPearUrl>
-
-<!--        <phpmavenReposSnapshotsUploadPluginUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-plugin-snapshots/</phpmavenReposSnapshotsUploadPluginUrl> -->
 
         <phpmavenReposSnapshotsUploadPluginUrl>${phpmavenNexusRootUrl}/repository/snapshots/</phpmavenReposSnapshotsUploadPluginUrl>
 
