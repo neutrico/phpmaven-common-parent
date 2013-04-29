@@ -13,14 +13,22 @@
         <phpmavenRootUrl>http://www.php-maven.org</phpmavenRootUrl>
         <phpmavenFsRoot>${project.basedir}</phpmavenFsRoot>
 
-        <phpmavenNexusRootUrl>http://nexus.php-maven.org</phpmavenNexusRootUrl>
+<!--        <phpmavenNexusRootUrl>http://nexus.php-maven.org</phpmavenNexusRootUrl> -->
+        <phpmavenNexusRootUrl>http://localhost:8090</phpmavenNexusRootUrl>
         <phpmavenReposReleasesUrl>${phpmavenNexusRootUrl}/index.html#view-repositories;release-repo1.php-maven.org</phpmavenReposReleasesUrl>
         <phpmavenReposReleasesUrlAlt>${phpmavenNexusRootUrl}/content/groups/release-repo1.php-maven.org/</phpmavenReposReleasesUrlAlt>
         <phpmavenReposReleasesId>releases-php-maven-org</phpmavenReposReleasesId>
         <phpmavenReposReleasesName>Official PHP-Maven Releases</phpmavenReposReleasesName>
         <phpmavenReposReleasesUploadNullUrl>${phpmavenNexusRootUrl}/content/repositories/null-releases.php-maven.org/</phpmavenReposReleasesUploadNullUrl>
+<!--        <phpmavenReposReleasesUploadPearUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-pear-releases/</phpmavenReposReleasesUploadPearUrl> -->
+
         <phpmavenReposReleasesUploadPearUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-pear-releases/</phpmavenReposReleasesUploadPearUrl>
-        <phpmavenReposReleasesUploadPluginUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-plugin-releases/</phpmavenReposReleasesUploadPluginUrl>
+
+<!--        <phpmavenReposReleasesUploadPluginUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-plugin-releases/</phpmavenReposReleasesUploadPluginUrl> -->
+
+        <phpmavenReposReleasesUploadPluginUrl>${phpmavenNexusRootUrl}/repository/internal/</phpmavenReposReleasesUploadPluginUrl>
+
+
         <phpmavenReposReleasesUploadPhpUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-php-releases/</phpmavenReposReleasesUploadPhpUrl>
         <phpmavenReposSnapshotsUrl>${phpmavenNexusRootUrl}/index.html#view-repositories;snapshot-repo1.php-maven.org</phpmavenReposSnapshotsUrl>
         <phpmavenReposSnapshotsUrlAlt>${phpmavenNexusRootUrl}/content/groups/snapshot-repo1.php-maven.org/</phpmavenReposSnapshotsUrlAlt>
@@ -28,7 +36,13 @@
         <phpmavenReposSnapshotsName>Official PHP-Maven Snapshots</phpmavenReposSnapshotsName>
         <phpmavenReposSnapshotsUploadNullUrl>${phpmavenNexusRootUrl}/content/repositories/null-snapshots.php-maven.org/</phpmavenReposSnapshotsUploadNullUrl>
         <phpmavenReposSnapshotsUploadPearUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-pear-snapshots/</phpmavenReposSnapshotsUploadPearUrl>
-        <phpmavenReposSnapshotsUploadPluginUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-plugin-snapshots/</phpmavenReposSnapshotsUploadPluginUrl>
+
+<!--        <phpmavenReposSnapshotsUploadPluginUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-plugin-snapshots/</phpmavenReposSnapshotsUploadPluginUrl> -->
+
+        <phpmavenReposSnapshotsUploadPluginUrl>${phpmavenNexusRootUrl}/repository/snapshots/</phpmavenReposSnapshotsUploadPluginUrl>
+
+
+
         <phpmavenReposSnapshotsUploadPhpUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-php-snapshots/</phpmavenReposSnapshotsUploadPhpUrl>
         <phpmavenSitesId>website-php-maven-org</phpmavenSitesId>
         <phpmavenSitesName>Official PHP-Maven website</phpmavenSitesName>
@@ -60,7 +74,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <groupId>org.phpmaven.build</groupId>
+<!--    <groupId>org.phpmaven.build</groupId> -->
+
+    <groupId>pl.neutrico</groupId>
+
     <artifactId>common-parent</artifactId>
     <version>1</version>
     <packaging>pom</packaging>
@@ -74,12 +91,14 @@
     
     <distributionManagement>
         <repository>
-            <id>upload-${phpmavenReposReleasesId}</id>
+<!--            <id>upload-${phpmavenReposReleasesId}</id> -->
+            <id>internal</id>
             <name>${phpmavenReposReleasesName}</name>
             <url>${phpmavenReposReleasesUploadPluginUrl}</url>
         </repository>
         <snapshotRepository>
-            <id>upload-${phpmavenReposSnapshotsId}</id>
+<!--            <id>upload-${phpmavenReposSnapshotsId}</id> -->
+            <id>snapshots</id>
             <name>${phpmavenReposSnapshotsName}</name>
             <url>${phpmavenReposSnapshotsUploadPluginUrl}</url>
         </snapshotRepository>
