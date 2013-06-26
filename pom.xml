@@ -61,6 +61,11 @@
 
     <name>Maven PHP parent pom</name>
 
+	<scm>
+	  <connection>scm:git:git://github.com/neutrico/phpmaven-common-parent.git</connection>
+	  <developerConnection>scm:git:ssh://git@github.com/neutrico/phpmaven-common-parent.git</developerConnection>
+	</scm>
+
     <description>
         A Maven plugin for dependency management and quality assurance in PHP projects. Uses
         the default Maven lifecycle to provide multiple php features.
