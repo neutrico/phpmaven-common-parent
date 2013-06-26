@@ -48,7 +48,7 @@
         <phpmavenForkYear>2010</phpmavenForkYear>
         <phpmavenCopyrightYear>2012</phpmavenCopyrightYear>
     
-        <htmlBottom>&lt;b&gt;Copyright &#169; ${phpmavenForkYear}-${phpmavenCopyrightYear} PHP-Maven.org. All Rights Reserved.&lt;/b&gt;</htmlBottom>
+        <htmlBottom>&lt;b&gt;Copyright © ${phpmavenForkYear}-${phpmavenCopyrightYear} PHP-Maven.org. All Rights Reserved.&lt;/b&gt;</htmlBottom>
         
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -56,7 +56,7 @@
     <groupId>pl.neutrico</groupId>
 
     <artifactId>common-parent</artifactId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.5</version>
     <packaging>pom</packaging>
 
     <name>Maven PHP parent pom</name>
@@ -64,7 +64,8 @@
 	<scm>
 	  <connection>scm:git:git://github.com/neutrico/phpmaven-common-parent.git</connection>
 	  <developerConnection>scm:git:ssh://git@github.com/neutrico/phpmaven-common-parent.git</developerConnection>
-	</scm>
+	  <tag>common-parent-1.5</tag>
+  </scm>
 
     <description>
         A Maven plugin for dependency management and quality assurance in PHP projects. Uses
